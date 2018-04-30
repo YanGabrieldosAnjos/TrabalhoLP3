@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blue Sky Airlines</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:\Users\YAN\Desktop\trabalhopt1.0\css\custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type= "text/javascript" src="C:\Users\YAN\Desktop\trabalhopt1.0\js\index.js"></script>
+</head>
+<body>
+
+<!-- Grey with black text -->
+
+  
+<div  class="container">  
+    <div class="row" >   
+        <div class="container-fluid" ><h1>BSA</h1></div>
+    </div>  
+
+
+  <nav class="navbar navbar-expand-sm bg-blue navbar-white sticky-top">
+        <ul class="nav justify-content-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+             Login
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="log" href="login.html" >Logar</a>
+              <a class="dropdown-item" id="log" href="formulario.html" >Cadastrar</a>
+            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="lista voos.html" id="navlink" >Passagens em desconto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="consulta.html" id="navlink">Voos disponiveis</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link"  href="check-in.html" id="navlink">Check-in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="reclamacao.html" id="navlink">Fale conosco</a>
+          </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container justify-content-center" style="background: white; box-shadow: 5px 5px">
+  
+  <div class="row" style="background: gray;">
+    <div class="col-sm">
+      <h3> DE:</h3>
+      <h3> PARA:</h3>
+    </div>
+    <div class="col-md-4 offset-md-4 align-self-end">
+      <label>Data ida/</label>
+      <label>Data volta</label>
+      <h3>Valor:</h3>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <h3 style="color: black;"> PAGAMENTO:</h3>
+    <div class="w-100"></div>
+    <div class="row justify-content-center">
+        <div class="col-5">
+          <input id="numCartao" type='text' class="form-control" placeholder="Numero do Cartão"/>
+        </div>
+        <div class="col-5">
+          <input type="password" class="form-control" id="senha" placeholder="Senha">
+        </div>
+		<div class="form-group">
+                  <label for="exampleFormControlSelect1" style="color:black">PARCELAS:</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option checked >1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                  </select>
+                </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="row justify-content-center">
+      <a class="btn btn-outline-primary btn-lg active justify-content-center" role="button" aria-pressed="true" onclick="validarCartao('numCartao', 'senha')">CONFIRMAR PAGAMENTO</a>
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="alert alert-sucess alert-dismissible fade show" role="alert" hidden="true">
+    <strong>Existem campos não preencidos!</strong> por favor verifiqueos dados da consulta.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+</div>
+
+<footer class="page-footer font-small blue pt-4 mt-4">
+  <div class="footer-copyright py-3 text-center">
+        © 2018 BSA Airlines
+  </div>
+</footer>
+
+</body>
+</html>

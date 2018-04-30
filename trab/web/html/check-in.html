@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blue Sky Airlines</title>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:\Users\YAN\Desktop\trabalhopt1.0\css\custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type= "text/javascript" src="C:\Users\YAN\Desktop\trabalhopt1.0\js\index.js"></script>
+</head>
+<body>
+
+<!-- Grey with black text -->
+
+  
+<div  class="container">  
+    <div class="row" >   
+        <div class="container-fluid" ><h1>BSA</h1></div>
+    </div>  
+
+
+  <nav class="navbar navbar-expand-sm bg-blue navbar-white sticky-top">
+        <ul class="nav justify-content-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+             Login
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="log" href="login.html" >Logar</a>
+              <a class="dropdown-item" id="log" href="formulario.html" >Cadastrar</a>
+            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="lista voos.html" id="navlink" >Passagens em desconto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="consulta.html" id="navlink">Voos disponiveis</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link"  href="check-in.html" id="navlink">Check-in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="reclamacao.html" id="navlink">Fale conosco</a>
+          </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container" style="background: white; box-shadow: 5px 5px">
+  <div class="row justify-content-center">
+    <h1 style="color: blue">Faça o check-in e economize tempo no dia da viagem!</h1>
+    <div class="w-100"></div>
+    <div class="col-4">
+    </div>
+    <div class="col-6">
+      <div class="row justify-content-center">
+        <div class="col-6 justify-content-center">
+          <input id="reserva" type="text" class="form-control" name="destino" placeholder="Codigo de reserva">
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" hidden="true">
+            <strong>Checking invalido!</strong> verifique o numero de check-in em sua passagem.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="alert alert-sucess alert-dismissible fade show" role="alert" hidden="true">
+            </button><strong>Checking realizado com sucesso!</strong> tenha uma boa viagem.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="w-100"></div>
+        <div class="row justify-content-center">
+          <a class="btn btn-outline-primary btn-lg active justify-content-center" role="button" aria-pressed="true" onclick="verificarCheckin('reserva')">FAZER CHECK-IN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+<footer class="page-footer font-small blue pt-4 mt-4">
+  <div class="footer-copyright py-3 text-center">
+        © 2018 BSA Airlines
+  </div>
+</footer>
+
+</body>
+</html>

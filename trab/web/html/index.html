@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blue Sky Airlines</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:\Users\YAN\Desktop\trabalhopt1.0\css\custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type= "text/javascript" src="C:\Users\YAN\Desktop\trabalhopt1.0\js\index.js"></script>
+  <script type="text/javascript">
+    window.onload = function(){
+    makeactive(1); 
+    makeactivecontent(1);
+    validateLog();  
+  }
+    </script>
+</head>
+<body>
+
+<!-- Grey with black text -->
+
+  
+<div  class="container">  
+    <div class="row" >   
+        <div class="container-fluid" ><h1>BSA</h1></div>
+    </div>  
+
+
+  <nav class="navbar navbar-expand-sm bg-blue navbar-white sticky-top">
+        <ul class="nav justify-content-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+             Login
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="log" href="login.html" >Logar</a>
+              <a class="dropdown-item" id="log" href="formulario.html" >Cadastrar</a>
+            </div>
+          <li class="nav-item">
+            <a class="nav-link"  href="consulta.html" id="navlink">Voos disponiveis</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link"  href="check-in.html" id="navlink">Check-in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="reclamacao.html" id="navlink">Fale conosco</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link " href="consulta reclamacao.html" id="navlink">Consulte sua reclamação</a>
+          </li>
+        </ul>
+    </nav>
+</div>
+
+<div id="demo" class="carousel slide" align="center" data-ride="carousel" >
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="consulta visitante.html"><img  src="C:\Users\YAN\Desktop\trabalhopt1.0\fotos\la.jpg" alt="Los Angeles" id="imgformat"></a>
+            <div class="carousel-caption">
+              <h3>Preço justo</h3>
+              <p>O melhor preço para os melhores clientes</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img  src="C:\Users\YAN\Desktop\trabalhopt1.0\fotos\chicago.jpg" alt="Chicago" id="imgformat">
+            <div class="carousel-caption">
+              <h3>Conforto</h3>
+              <a href=equipe.html><p>A equipe que se importa com você!</p></a>>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <a href="lista voos visitante.html"><img src="C:\Users\YAN\Desktop\trabalhopt1.0\fotos\osaka.jpg" alt="Osaka" id="imgformat"></a>
+            <div class="carousel-caption">
+              <h3>Viagens internacionais</h3>
+              <p>Viagem para todos os lugares do mundo!</p>
+            </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+</body>
+</html>

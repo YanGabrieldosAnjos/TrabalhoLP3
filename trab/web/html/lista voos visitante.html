@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blue Sky Airlines</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="C:\Users\YAN\Desktop\trabalhopt1.0\css\custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type= "text/javascript" src="C:\Users\YAN\Desktop\trabalhopt1.0\js\index.js"></script>
+</head>
+<body>
+
+<!-- Grey with black text -->
+
+  
+<div  class="container">  
+    <div class="row" >   
+        <div class="container-fluid" ><h1>BSA</h1></div>
+    </div>  
+
+
+  <nav class="navbar navbar-expand-sm bg-blue navbar-white sticky-top">
+        <ul class="nav justify-content-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+             Login
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="log" href="login.html" >Logar</a>
+              <a class="dropdown-item" id="log" href="formulario.html" >Cadastrar</a>
+            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="lista voos.html" id="navlink" >Passagens em desconto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="consulta.html" id="navlink">Voos disponiveis</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link"  href="check-in.html" id="navlink">Check-in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="reclamacao.html" id="navlink">Fale conosco</a>
+          </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container" style="background: white; box-shadow: 5px 5px">
+  
+  <div class="row" style="background: gray;">
+    <div class="col-sm">
+      <h3> IDA</h3>
+      <label>De:</label><label id="deIda"></label>
+      <label>Para:</label><label id="paraIda"></label>
+    </div>
+    <div class="col-md-4 offset-md-4 align-self-end">
+      <label>Data:</label><label id="dataIda"></label>
+    </div>
+    <script type="text/javascript">
+      preencheLabel('deIda', 'cidade1');
+      preencheLabel('paraIda', 'cidade2');
+      preencheLabel('dataIda', 'data1');
+    </script>>
+  </div>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">De:</th>
+      <th scope="col">Para:</th>
+      <th scope="col">Voo</th>
+      <th scope="col">Duracao</th>
+      <th scope="col">Preco</th>
+    </tr>
+  </thead>
+  </table>
+  
+  <div class="row" style="background: gray;">
+    <div class="col-sm">
+      <h3> VOLTA</h3>
+      <label>De:</label><label id="deVolta"></label>
+        <label>Para:</label><label id="paraVolta"></label>
+    </div>
+    <div class="col-md-4 offset-md-4 align-self-end">
+      <label>Data:</label><label id="dataVolta"></label>
+    </div>
+    <script type="text/javascript">
+      preencheLabel('deVolta', 'cidade2');
+      preencheLabel('paraVolta', 'cidade1');
+      preencheLabel('dataVolta', 'data2');
+    </script>>
+  </div>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">De:</th>
+      <th scope="col">Para:</th>
+      <th scope="col">Voo</th>
+      <th scope="col">Duracao</th>
+      <th scope="col">Preco</th>
+    </tr>
+  </thead>
+  </table>
+</div>
+
+<div class="container justify-content-center form-inline">
+    <div class="row justify-content-center">
+      <div class="col-sm"></div>
+      <div class="col-sm align-self-center">
+        <a href="consulta.html" class="btn btn-outline-primary btn-lg active justify-content-center" role="button" aria-pressed="true">VOLTAR</a>
+      </div>
+      <div class="col-sm align-self-center">
+        <a  class="btn btn-outline-primary btn-lg active justify-content-center" role="button" aria-pressed="true">CONTINUAR</a>
+      </div>
+      <div class="col-sm"></div>
+    </div>
+    <div class="w-100"></div>
+    <div class="row justify-content-center">
+      <div class="alert alert-sucess alert-dismissible fade show" role="alert" hidden="true">
+        <strong>Selecione o voo de ida/volta!</strong> por favor verifiqueos dados da consulta.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+</div>
+
+
+<footer class="page-footer font-small blue pt-4 mt-4">
+  <div class="footer-copyright py-3 text-center">
+        © 2018 BSA Airlines
+  </div>
+</footer>
+
+</body>
+</html>
