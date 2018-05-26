@@ -1,0 +1,41 @@
+body{
+    background:url(background.jpg);
+
+}
+h1{
+    color:rgb(252, 252, 249);font-family:'Roboto', sans-serif;
+}
+h3{
+    color:rgb(252, 252, 249);font-family:'Roboto', sans-serif;
+}
+p{
+    color:rgb(252, 252, 249);font-family:'Roboto', sans-serif;
+}
+table{
+    color:rgb(252, 252, 249);font-family:'Roboto', sans-serif;
+}
+#log{
+    color: #4D4DFF;font-family:'Roboto', sans-serif;
+}
+#navlink{
+    color:rgb(252, 252, 249);font-family:'Roboto', sans-serif;
+}
+#demo{
+    color:rgb(252, 252, 249);font-family:'Roboto', sans-serif;
+}
+#imgformat{
+    width:1100px; 
+    height:500px;
+}
+#navbardrop{
+    color:rgb(252, 252, 249);font-family:'Roboto', sans-serif;
+}
+#justify-content-center{
+    color: white;
+}
+label{
+    color:rgb(252, 252, 249);font-family:'Roboto', sans-serif;
+}
+#form-check-input{
+    color:rgb(252, 252, 249);font-family:'Roboto', sans-serif;
+}
