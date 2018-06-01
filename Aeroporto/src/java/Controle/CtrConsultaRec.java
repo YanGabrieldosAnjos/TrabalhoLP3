@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author YAN
  */
-public class CtrReclamacao extends HttpServlet {
+public class CtrConsultaRec extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,24 +30,17 @@ public class CtrReclamacao extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-        
             throws ServletException, IOException {
-            
         response.setContentType("text/html;charset=UTF-8");
-         try (PrintWriter out = response.getWriter()) {
+        try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-             String idPassagem,dt,reclamacao;
-             idPassagem=request.getParameter("idpassagem");
-             dt=request.getParameter("dtreclamacao");
-             reclamacao=request.getParameter("comment");
-             Reclamacao r=new Reclamacao(idPassagem,reclamacao,dt);
-             r.insere();
-             
-             RequestDispatcher dispatcher = request.getRequestDispatcher("consulta reclamacao.jsp");
-             dispatcher.forward(request,response);
-          
-         }     
-        
+            Reclamacao r= new Reclamacao(request.getParameter("idpassagem")," "," ");
+            ArrayList<Reclamacao> rec= new ArrayList<>();
+            r.setIdPassagem(request.getParameter("idpassagem"));
+            rec=r.pesquisarTodos();
+            
+         
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

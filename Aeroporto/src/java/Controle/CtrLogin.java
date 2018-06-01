@@ -4,21 +4,21 @@
  * and open the template in the editor.
  */
 package Controle;
-import java.util.ArrayList;
-import Negocio.Reclamacao;
+
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import Negocio.Cliente;
 /**
  *
  * @author YAN
  */
-public class CtrReclamacao extends HttpServlet {
+@WebServlet(name = "CtrLogin", urlPatterns = {"/CtrLogin"})
+public class CtrLogin extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,24 +30,13 @@ public class CtrReclamacao extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-        
             throws ServletException, IOException {
-            
         response.setContentType("text/html;charset=UTF-8");
-         try (PrintWriter out = response.getWriter()) {
+        try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-             String idPassagem,dt,reclamacao;
-             idPassagem=request.getParameter("idpassagem");
-             dt=request.getParameter("dtreclamacao");
-             reclamacao=request.getParameter("comment");
-             Reclamacao r=new Reclamacao(idPassagem,reclamacao,dt);
-             r.insere();
-             
-             RequestDispatcher dispatcher = request.getRequestDispatcher("consulta reclamacao.jsp");
-             dispatcher.forward(request,response);
-          
-         }     
-        
+            String email,cpf;
+            
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
