@@ -4,9 +4,25 @@
         <servlet-name>CtrReclamacao</servlet-name>
         <servlet-class>Controle.CtrReclamacao</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CtrLogin</servlet-name>
+        <servlet-class>Controle.CtrLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CtrConsultaRec</servlet-name>
+        <servlet-class>Controle.CtrConsultaRec</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CtrReclamacao</servlet-name>
         <url-pattern>/CtrReclamacao</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CtrLogin</servlet-name>
+        <url-pattern>/CtrLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CtrConsultaRec</servlet-name>
+        <url-pattern>/CtrConsultaRec</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -23,7 +23,7 @@
     makeactive(1); 
     makeactivecontent(1);
     validateLog();  
-  }
+  };
     </script>
   
 
@@ -59,7 +59,7 @@
             <a class="nav-link"  href="check-in.html" id="navlink">Check-in</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="reclamacao.html" id="navlink">Fale conosco</a>
+            <a class="nav-link " href="reclamacao.jsp" id="navlink">Fale conosco</a>
           </li>
         </ul>
     </nav>
