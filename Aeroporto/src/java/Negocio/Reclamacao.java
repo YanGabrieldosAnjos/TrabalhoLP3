@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Negocio;
+import java.util.ArrayList;
 import Banco.ReclamacaoDAO;
 /**
  *
@@ -13,12 +14,17 @@ public class Reclamacao {
     private String idPassagem;
     private String reclamacao;
     private String data;
-
+     
     public Reclamacao(String idPassagem, String reclamacao, String data) {
         this.idPassagem = idPassagem;
         this.reclamacao = reclamacao;
         this.data = data;
     }
+
+    public Reclamacao() {
+    }
+
+  
 
     public String getIdPassagem() {
         return idPassagem;
@@ -46,5 +52,11 @@ public class Reclamacao {
     public boolean insere(){
         ReclamacaoDAO r= new ReclamacaoDAO();
         return r.incluir(this);
+    }
+
+
+    public ArrayList<Reclamacao> pesquisarTodos() {
+           ReclamacaoDAO r= new ReclamacaoDAO();
+           return r.consultaTodos(this);
     }
 }
